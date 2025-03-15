@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕Te gustaría estar conmigo?</title>
+    <style>
+    .body {
+   background-color: yellow;
+   text-align: center;
+    }
+
+    .body__tittle {
+       color: white; 
+    }
+
+    .body__img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+<body class="body">
+<h1 class="body__tittle">💕Te gustaría estar conmigo?</h1>
+<img src="https://cdn.discordapp.com/attachments/1343708765417111654/1350168578791571496/shrekfionadecaracion.PNG?ex=67d5c1fa&is=67d4707a&hm=ebca0f134dd4b0ab77125872c1a107a0136ccc1e1be3de72b5a536f394405c93&" alt="foto shrek" class="body__img">
+<button id="yes">Quiero💋</button>
+<button id="no">Nopi😜</button>
+
+<script>
+const vutonSi = document.getElementById('yes');
+const vutonNo = document.getElementById('no');
+
+const TeAmo = () => {
+    alert('💖TE AMO💖');
+    alert('💖TE ADORO💖');
+    location.href = 'https://www.youtube.com/watch?v=MldGX_mbS-o&ab_channel=MILOJ'
+}
+
+const nooporfa = () => {
+    vutonNo.style.position = 'absolute';
+    vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+    vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+};
+
+vutonSi.addEventListener('click', TeAmo);
+vutonNo.addEventListener('mouseover', nooporfa);
+</script>
+</body>
+</html>
